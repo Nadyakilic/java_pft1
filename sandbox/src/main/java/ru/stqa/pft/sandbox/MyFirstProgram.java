@@ -7,29 +7,23 @@ public class MyFirstProgram {
     hello("user");
     hello("Alexey");
 
-    double l = 5;
-    System.out.println("Ploshad kvadrata so storonoj " + l + " = " + area (l));
+    Square s= new Square(5);  //sozdali objekt square
+    System.out.println("Ploshad kvadrata so storonoj " + s.l+ "=" + s.area ());//atribut s.l
 
-double a = 4;
-double b = 6;
-    System.out.println("Ploshad pryamougolnika so storonami " + a +  " i "  + b + " = " + area (a, b));
-      }
+    Rectangle r = new Rectangle(4, 6);// chast koda v kotoroj sozdayutsya objektu.
+    System.out.println( "Ploshad pryamougolnika so storonami " + r.a + " i " +r.b + " = " + r.area());
+
+  }
 
   public static void hello(String somebody) {
-    System.out.println("Hello, " + somebody + "!");
+    System.out.println("Hello," + somebody + "!");
   }
-
-  public static double area(double len) {
-    return len * len;
-  }
-
-public static double area (double a,  double b ){
-return a*b;
 
 
 }
 
-}
+
+
 
 
 
